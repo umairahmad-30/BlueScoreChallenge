@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		411D26282A956DBA000DAFFD /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D26272A956DBA000DAFFD /* HomeModel.swift */; };
+		411D262A2A956DDA000DAFFD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D26292A956DDA000DAFFD /* HomeViewModel.swift */; };
+		411D262C2A956E03000DAFFD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D262B2A956E03000DAFFD /* HomeViewController.swift */; };
+		41AD2A912A95576A0003DE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD2A902A95576A0003DE08 /* AppDelegate.swift */; };
+		41AD2A932A95576A0003DE08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD2A922A95576A0003DE08 /* SceneDelegate.swift */; };
+		41AD2A982A95576A0003DE08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD2A962A95576A0003DE08 /* Main.storyboard */; };
+		41AD2A9A2A95576B0003DE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD2A992A95576B0003DE08 /* Assets.xcassets */; };
+		41AD2A9D2A95576B0003DE08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD2A9B2A95576B0003DE08 /* LaunchScreen.storyboard */; };
+		41AD2AB22A95576B0003DE08 /* BlueScoreChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD2AB12A95576B0003DE08 /* BlueScoreChallengeUITests.swift */; };
+		41AD2AB42A95576B0003DE08 /* BlueScoreChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD2AB32A95576B0003DE08 /* BlueScoreChallengeUITestsLaunchTests.swift */; };
+		41AD2AC22A9557C90003DE08 /* WalkThroughModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD2AC12A9557C90003DE08 /* WalkThroughModel.swift */; };
+		41AD2AC42A9557EF0003DE08 /* WalkThroughViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD2AC32A9557EF0003DE08 /* WalkThroughViewModel.swift */; };
+		41AD2AC62A95581A0003DE08 /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD2AC52A95581A0003DE08 /* WalkThroughViewController.swift */; };
+		41AD2ACA2A955A5B0003DE08 /* WalkThroughViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD2AC92A955A5B0003DE08 /* WalkThroughViewModelTests.swift */; };
+		41AD2ACC2A955A770003DE08 /* WalkThroughViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD2ACB2A955A770003DE08 /* WalkThroughViewControllerTests.swift */; };
+		41B3A2B82A95978D00F46756 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3A2B72A95978D00F46756 /* CommonUtils.swift */; };
+		41B3A2BA2A95A28300F46756 /* swipe_down.json in Resources */ = {isa = PBXBuildFile; fileRef = 41B3A2B92A95A28300F46756 /* swipe_down.json */; };
+		41B3A2BD2A95AA4500F46756 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3A2BC2A95AA4500F46756 /* ARViewModel.swift */; };
+		41B3A2BF2A95AA8C00F46756 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3A2BE2A95AA8C00F46756 /* ARViewController.swift */; };
+		41B3A2C22A95C22D00F46756 /* ThreatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3A2C12A95C22D00F46756 /* ThreatViewModel.swift */; };
+		41B3A2CA2A95C29500F46756 /* ThreatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3A2C82A95C29500F46756 /* ThreatTableViewCell.swift */; };
+		41B3A2CB2A95C29500F46756 /* ThreatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B3A2C92A95C29500F46756 /* ThreatTableViewCell.xib */; };
+		41B3A2CD2A95C2E300F46756 /* ThreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3A2CC2A95C2E300F46756 /* ThreatViewController.swift */; };
+		4498A7C40B7D4E0108071765 /* Pods_BlueScoreChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23CF0855A57BE83DE60DAF0 /* Pods_BlueScoreChallengeTests.framework */; };
+		71944FD12E4A57312DE77730 /* Pods_BlueScoreChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E0E7843F06CCA49CC4C73D /* Pods_BlueScoreChallenge.framework */; };
+		FAFFC701DA5E17CCD5741548 /* Pods_BlueScoreChallenge_BlueScoreChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED0062E6663A2797EB08CFF /* Pods_BlueScoreChallenge_BlueScoreChallengeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41AD2AA42A95576B0003DE08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41AD2A852A95576A0003DE08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41AD2A8C2A95576A0003DE08;
+			remoteInfo = BlueScoreChallenge;
+		};
+		41AD2AAE2A95576B0003DE08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41AD2A852A95576A0003DE08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41AD2A8C2A95576A0003DE08;
+			remoteInfo = BlueScoreChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06F768B38330945037F5A5BE /* Pods-BlueScoreChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueScoreChallenge.debug.xcconfig"; path = "Target Support Files/Pods-BlueScoreChallenge/Pods-BlueScoreChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		0ED0062E6663A2797EB08CFF /* Pods_BlueScoreChallenge_BlueScoreChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueScoreChallenge_BlueScoreChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E0E7843F06CCA49CC4C73D /* Pods_BlueScoreChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueScoreChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		411D26222A9567F6000DAFFD /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		411D26232A9567F6000DAFFD /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		411D26272A956DBA000DAFFD /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		411D26292A956DDA000DAFFD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		411D262B2A956E03000DAFFD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		41AD2A8D2A95576A0003DE08 /* BlueScoreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueScoreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AD2A902A95576A0003DE08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41AD2A922A95576A0003DE08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41AD2A972A95576A0003DE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41AD2A992A95576B0003DE08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41AD2A9C2A95576B0003DE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41AD2A9E2A95576B0003DE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AD2AA32A95576B0003DE08 /* BlueScoreChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueScoreChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AD2AAD2A95576B0003DE08 /* BlueScoreChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueScoreChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AD2AB12A95576B0003DE08 /* BlueScoreChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueScoreChallengeUITests.swift; sourceTree = "<group>"; };
+		41AD2AB32A95576B0003DE08 /* BlueScoreChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueScoreChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		41AD2AC12A9557C90003DE08 /* WalkThroughModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughModel.swift; sourceTree = "<group>"; };
+		41AD2AC32A9557EF0003DE08 /* WalkThroughViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewModel.swift; sourceTree = "<group>"; };
+		41AD2AC52A95581A0003DE08 /* WalkThroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
+		41AD2AC92A955A5B0003DE08 /* WalkThroughViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewModelTests.swift; sourceTree = "<group>"; };
+		41AD2ACB2A955A770003DE08 /* WalkThroughViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewControllerTests.swift; sourceTree = "<group>"; };
+		41B3A2B72A95978D00F46756 /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		41B3A2B92A95A28300F46756 /* swipe_down.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swipe_down.json; sourceTree = "<group>"; };
+		41B3A2BC2A95AA4500F46756 /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
+		41B3A2BE2A95AA8C00F46756 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		41B3A2C12A95C22D00F46756 /* ThreatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreatViewModel.swift; sourceTree = "<group>"; };
+		41B3A2C82A95C29500F46756 /* ThreatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreatTableViewCell.swift; sourceTree = "<group>"; };
+		41B3A2C92A95C29500F46756 /* ThreatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreatTableViewCell.xib; sourceTree = "<group>"; };
+		41B3A2CC2A95C2E300F46756 /* ThreatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreatViewController.swift; sourceTree = "<group>"; };
+		44C9F99840B6F316960D44D5 /* Pods-BlueScoreChallenge-BlueScoreChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueScoreChallenge-BlueScoreChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-BlueScoreChallenge-BlueScoreChallengeUITests/Pods-BlueScoreChallenge-BlueScoreChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		68D82804F0D5B6F4C4CD7C88 /* Pods-BlueScoreChallenge-BlueScoreChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueScoreChallenge-BlueScoreChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-BlueScoreChallenge-BlueScoreChallengeUITests/Pods-BlueScoreChallenge-BlueScoreChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B1F518C805DEBA3FB3F4E12B /* Pods-BlueScoreChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueScoreChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-BlueScoreChallengeTests/Pods-BlueScoreChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C23CF0855A57BE83DE60DAF0 /* Pods_BlueScoreChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueScoreChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4AAA54750C1EB79F8C1A3C /* Pods-BlueScoreChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueScoreChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-BlueScoreChallengeTests/Pods-BlueScoreChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		FCDFC5EDDB8859229FB937A7 /* Pods-BlueScoreChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueScoreChallenge.release.xcconfig"; path = "Target Support Files/Pods-BlueScoreChallenge/Pods-BlueScoreChallenge.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41AD2A8A2A95576A0003DE08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71944FD12E4A57312DE77730 /* Pods_BlueScoreChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD2AA02A95576B0003DE08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4498A7C40B7D4E0108071765 /* Pods_BlueScoreChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD2AAA2A95576B0003DE08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFFC701DA5E17CCD5741548 /* Pods_BlueScoreChallenge_BlueScoreChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		411D26262A956D66000DAFFD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				411D26272A956DBA000DAFFD /* HomeModel.swift */,
+				411D26292A956DDA000DAFFD /* HomeViewModel.swift */,
+				411D262B2A956E03000DAFFD /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		41AD2A842A95576A0003DE08 = {
+			isa = PBXGroup;
+			children = (
+				41AD2A8F2A95576A0003DE08 /* BlueScoreChallenge */,
+				41AD2AA62A95576B0003DE08 /* BlueScoreChallengeTests */,
+				41AD2AB02A95576B0003DE08 /* BlueScoreChallengeUITests */,
+				41AD2A8E2A95576A0003DE08 /* Products */,
+				8894658C880D72DDD72714F7 /* Pods */,
+				52C5A51ADE954364D6E60C3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		41AD2A8E2A95576A0003DE08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41AD2A8D2A95576A0003DE08 /* BlueScoreChallenge.app */,
+				41AD2AA32A95576B0003DE08 /* BlueScoreChallengeTests.xctest */,
+				41AD2AAD2A95576B0003DE08 /* BlueScoreChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41AD2A8F2A95576A0003DE08 /* BlueScoreChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				41AD2A9E2A95576B0003DE08 /* Info.plist */,
+				41AD2A902A95576A0003DE08 /* AppDelegate.swift */,
+				41AD2A922A95576A0003DE08 /* SceneDelegate.swift */,
+				41AD2ACD2A95645A0003DE08 /* Resources */,
+				41AD2ACE2A9564700003DE08 /* Storyboards */,
+				41AD2ACF2A9564820003DE08 /* UI */,
+				41B3A2B62A95977700F46756 /* Utilities */,
+			);
+			path = BlueScoreChallenge;
+			sourceTree = "<group>";
+		};
+		41AD2AA62A95576B0003DE08 /* BlueScoreChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				41AD2AC72A955A340003DE08 /* WalkThrough */,
+			);
+			path = BlueScoreChallengeTests;
+			sourceTree = "<group>";
+		};
+		41AD2AB02A95576B0003DE08 /* BlueScoreChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41AD2AB12A95576B0003DE08 /* BlueScoreChallengeUITests.swift */,
+				41AD2AB32A95576B0003DE08 /* BlueScoreChallengeUITestsLaunchTests.swift */,
+			);
+			path = BlueScoreChallengeUITests;
+			sourceTree = "<group>";
+		};
+		41AD2AC02A9557B40003DE08 /* WalkThrough */ = {
+			isa = PBXGroup;
+			children = (
+				41AD2AC12A9557C90003DE08 /* WalkThroughModel.swift */,
+				41AD2AC32A9557EF0003DE08 /* WalkThroughViewModel.swift */,
+				41AD2AC52A95581A0003DE08 /* WalkThroughViewController.swift */,
+			);
+			path = WalkThrough;
+			sourceTree = "<group>";
+		};
+		41AD2AC72A955A340003DE08 /* WalkThrough */ = {
+			isa = PBXGroup;
+			children = (
+				41AD2AC92A955A5B0003DE08 /* WalkThroughViewModelTests.swift */,
+				41AD2ACB2A955A770003DE08 /* WalkThroughViewControllerTests.swift */,
+			);
+			path = WalkThrough;
+			sourceTree = "<group>";
+		};
+		41AD2ACD2A95645A0003DE08 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41B3A2B92A95A28300F46756 /* swipe_down.json */,
+				411D26222A9567F6000DAFFD /* Roboto-Regular.ttf */,
+				411D26232A9567F6000DAFFD /* Roboto-Thin.ttf */,
+				41AD2A992A95576B0003DE08 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		41AD2ACE2A9564700003DE08 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				41AD2A962A95576A0003DE08 /* Main.storyboard */,
+				41AD2A9B2A95576B0003DE08 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		41AD2ACF2A9564820003DE08 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				41B3A2C02A95C21700F46756 /* ThreatScore */,
+				41B3A2BB2A95AA3100F46756 /* AR */,
+				411D26262A956D66000DAFFD /* Home */,
+				41AD2AC02A9557B40003DE08 /* WalkThrough */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		41B3A2B62A95977700F46756 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				41B3A2B72A95978D00F46756 /* CommonUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		41B3A2BB2A95AA3100F46756 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				41B3A2BC2A95AA4500F46756 /* ARViewModel.swift */,
+				41B3A2BE2A95AA8C00F46756 /* ARViewController.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		41B3A2C02A95C21700F46756 /* ThreatScore */ = {
+			isa = PBXGroup;
+			children = (
+				41B3A2C72A95C26500F46756 /* Cell */,
+				41B3A2C12A95C22D00F46756 /* ThreatViewModel.swift */,
+				41B3A2CC2A95C2E300F46756 /* ThreatViewController.swift */,
+			);
+			path = ThreatScore;
+			sourceTree = "<group>";
+		};
+		41B3A2C72A95C26500F46756 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				41B3A2C82A95C29500F46756 /* ThreatTableViewCell.swift */,
+				41B3A2C92A95C29500F46756 /* ThreatTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		52C5A51ADE954364D6E60C3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E0E7843F06CCA49CC4C73D /* Pods_BlueScoreChallenge.framework */,
+				0ED0062E6663A2797EB08CFF /* Pods_BlueScoreChallenge_BlueScoreChallengeUITests.framework */,
+				C23CF0855A57BE83DE60DAF0 /* Pods_BlueScoreChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8894658C880D72DDD72714F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06F768B38330945037F5A5BE /* Pods-BlueScoreChallenge.debug.xcconfig */,
+				FCDFC5EDDB8859229FB937A7 /* Pods-BlueScoreChallenge.release.xcconfig */,
+				44C9F99840B6F316960D44D5 /* Pods-BlueScoreChallenge-BlueScoreChallengeUITests.debug.xcconfig */,
+				68D82804F0D5B6F4C4CD7C88 /* Pods-BlueScoreChallenge-BlueScoreChallengeUITests.release.xcconfig */,
+				B1F518C805DEBA3FB3F4E12B /* Pods-BlueScoreChallengeTests.debug.xcconfig */,
+				CD4AAA54750C1EB79F8C1A3C /* Pods-BlueScoreChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41AD2A8C2A95576A0003DE08 /* BlueScoreChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41AD2AB72A95576B0003DE08 /* Build configuration list for PBXNativeTarget "BlueScoreChallenge" */;
+			buildPhases = (
+				2D9592A3B0AB4CA7B759E791 /* [CP] Check Pods Manifest.lock */,
+				41AD2A892A95576A0003DE08 /* Sources */,
+				41AD2A8A2A95576A0003DE08 /* Frameworks */,
+				41AD2A8B2A95576A0003DE08 /* Resources */,
+				C8CFD93D16F38701F03931B6 /* [CP] Embed Pods Frameworks */,
+				C80F1998357297C1736505B4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueScoreChallenge;
+			productName = BlueScoreChallenge;
+			productReference = 41AD2A8D2A95576A0003DE08 /* BlueScoreChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41AD2AA22A95576B0003DE08 /* BlueScoreChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41AD2ABA2A95576B0003DE08 /* Build configuration list for PBXNativeTarget "BlueScoreChallengeTests" */;
+			buildPhases = (
+				2EB28134B3A4FD4B3F1E7D5A /* [CP] Check Pods Manifest.lock */,
+				41AD2A9F2A95576B0003DE08 /* Sources */,
+				41AD2AA02A95576B0003DE08 /* Frameworks */,
+				41AD2AA12A95576B0003DE08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41AD2AA52A95576B0003DE08 /* PBXTargetDependency */,
+			);
+			name = BlueScoreChallengeTests;
+			productName = BlueScoreChallengeTests;
+			productReference = 41AD2AA32A95576B0003DE08 /* BlueScoreChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41AD2AAC2A95576B0003DE08 /* BlueScoreChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41AD2ABD2A95576B0003DE08 /* Build configuration list for PBXNativeTarget "BlueScoreChallengeUITests" */;
+			buildPhases = (
+				3C8D3F64AADA612FD6B7BA15 /* [CP] Check Pods Manifest.lock */,
+				41AD2AA92A95576B0003DE08 /* Sources */,
+				41AD2AAA2A95576B0003DE08 /* Frameworks */,
+				41AD2AAB2A95576B0003DE08 /* Resources */,
+				6FF8D87AB87B6DD62B4A4AE0 /* [CP] Embed Pods Frameworks */,
+				D4C7C83A3D7C684C10C7A0EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41AD2AAF2A95576B0003DE08 /* PBXTargetDependency */,
+			);
+			name = BlueScoreChallengeUITests;
+			productName = BlueScoreChallengeUITests;
+			productReference = 41AD2AAD2A95576B0003DE08 /* BlueScoreChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41AD2A852A95576A0003DE08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					41AD2A8C2A95576A0003DE08 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					41AD2AA22A95576B0003DE08 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 41AD2A8C2A95576A0003DE08;
+					};
+					41AD2AAC2A95576B0003DE08 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 41AD2A8C2A95576A0003DE08;
+					};
+				};
+			};
+			buildConfigurationList = 41AD2A882A95576A0003DE08 /* Build configuration list for PBXProject "BlueScoreChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41AD2A842A95576A0003DE08;
+			productRefGroup = 41AD2A8E2A95576A0003DE08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41AD2A8C2A95576A0003DE08 /* BlueScoreChallenge */,
+				41AD2AA22A95576B0003DE08 /* BlueScoreChallengeTests */,
+				41AD2AAC2A95576B0003DE08 /* BlueScoreChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41AD2A8B2A95576A0003DE08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B3A2CB2A95C29500F46756 /* ThreatTableViewCell.xib in Resources */,
+				41AD2A9D2A95576B0003DE08 /* LaunchScreen.storyboard in Resources */,
+				41AD2A9A2A95576B0003DE08 /* Assets.xcassets in Resources */,
+				41B3A2BA2A95A28300F46756 /* swipe_down.json in Resources */,
+				41AD2A982A95576A0003DE08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD2AA12A95576B0003DE08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD2AAB2A95576B0003DE08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D9592A3B0AB4CA7B759E791 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueScoreChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EB28134B3A4FD4B3F1E7D5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueScoreChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C8D3F64AADA612FD6B7BA15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueScoreChallenge-BlueScoreChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FF8D87AB87B6DD62B4A4AE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge-BlueScoreChallengeUITests/Pods-BlueScoreChallenge-BlueScoreChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge-BlueScoreChallengeUITests/Pods-BlueScoreChallenge-BlueScoreChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge-BlueScoreChallengeUITests/Pods-BlueScoreChallenge-BlueScoreChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C80F1998357297C1736505B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge/Pods-BlueScoreChallenge-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge/Pods-BlueScoreChallenge-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge/Pods-BlueScoreChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8CFD93D16F38701F03931B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge/Pods-BlueScoreChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge/Pods-BlueScoreChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge/Pods-BlueScoreChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C7C83A3D7C684C10C7A0EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge-BlueScoreChallengeUITests/Pods-BlueScoreChallenge-BlueScoreChallengeUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge-BlueScoreChallengeUITests/Pods-BlueScoreChallenge-BlueScoreChallengeUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlueScoreChallenge-BlueScoreChallengeUITests/Pods-BlueScoreChallenge-BlueScoreChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41AD2A892A95576A0003DE08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AD2A912A95576A0003DE08 /* AppDelegate.swift in Sources */,
+				41AD2AC22A9557C90003DE08 /* WalkThroughModel.swift in Sources */,
+				411D262A2A956DDA000DAFFD /* HomeViewModel.swift in Sources */,
+				411D262C2A956E03000DAFFD /* HomeViewController.swift in Sources */,
+				41B3A2CD2A95C2E300F46756 /* ThreatViewController.swift in Sources */,
+				41B3A2C22A95C22D00F46756 /* ThreatViewModel.swift in Sources */,
+				411D26282A956DBA000DAFFD /* HomeModel.swift in Sources */,
+				41B3A2BD2A95AA4500F46756 /* ARViewModel.swift in Sources */,
+				41AD2AC62A95581A0003DE08 /* WalkThroughViewController.swift in Sources */,
+				41B3A2CA2A95C29500F46756 /* ThreatTableViewCell.swift in Sources */,
+				41AD2A932A95576A0003DE08 /* SceneDelegate.swift in Sources */,
+				41B3A2B82A95978D00F46756 /* CommonUtils.swift in Sources */,
+				41AD2AC42A9557EF0003DE08 /* WalkThroughViewModel.swift in Sources */,
+				41B3A2BF2A95AA8C00F46756 /* ARViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD2A9F2A95576B0003DE08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AD2ACA2A955A5B0003DE08 /* WalkThroughViewModelTests.swift in Sources */,
+				41AD2ACC2A955A770003DE08 /* WalkThroughViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD2AA92A95576B0003DE08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AD2AB22A95576B0003DE08 /* BlueScoreChallengeUITests.swift in Sources */,
+				41AD2AB42A95576B0003DE08 /* BlueScoreChallengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41AD2AA52A95576B0003DE08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41AD2A8C2A95576A0003DE08 /* BlueScoreChallenge */;
+			targetProxy = 41AD2AA42A95576B0003DE08 /* PBXContainerItemProxy */;
+		};
+		41AD2AAF2A95576B0003DE08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41AD2A8C2A95576A0003DE08 /* BlueScoreChallenge */;
+			targetProxy = 41AD2AAE2A95576B0003DE08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41AD2A962A95576A0003DE08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41AD2A972A95576A0003DE08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41AD2A9B2A95576B0003DE08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41AD2A9C2A95576B0003DE08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41AD2AB52A95576B0003DE08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41AD2AB62A95576B0003DE08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41AD2AB82A95576B0003DE08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F768B38330945037F5A5BE /* Pods-BlueScoreChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3675W3Q553;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlueScoreChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlueScore;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Application needs the Camera for AR feature";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Application needs location Permission to gather Cyber Threat Index";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Application needs location Permission to gather Cyber Threat Index";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Application needs location Permission to gather Cyber Threat Index";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.bluescorechallenge.BlueScoreChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41AD2AB92A95576B0003DE08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCDFC5EDDB8859229FB937A7 /* Pods-BlueScoreChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3675W3Q553;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlueScoreChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlueScore;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Application needs the Camera for AR feature";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Application needs location Permission to gather Cyber Threat Index";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Application needs location Permission to gather Cyber Threat Index";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Application needs location Permission to gather Cyber Threat Index";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.bluescorechallenge.BlueScoreChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41AD2ABB2A95576B0003DE08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F518C805DEBA3FB3F4E12B /* Pods-BlueScoreChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3675W3Q553;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.bluescorechallenge.BlueScoreChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueScoreChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlueScoreChallenge";
+			};
+			name = Debug;
+		};
+		41AD2ABC2A95576B0003DE08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD4AAA54750C1EB79F8C1A3C /* Pods-BlueScoreChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3675W3Q553;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.bluescorechallenge.BlueScoreChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueScoreChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlueScoreChallenge";
+			};
+			name = Release;
+		};
+		41AD2ABE2A95576B0003DE08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44C9F99840B6F316960D44D5 /* Pods-BlueScoreChallenge-BlueScoreChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3675W3Q553;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.bluescorechallenge.BlueScoreChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlueScoreChallenge;
+			};
+			name = Debug;
+		};
+		41AD2ABF2A95576B0003DE08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D82804F0D5B6F4C4CD7C88 /* Pods-BlueScoreChallenge-BlueScoreChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3675W3Q553;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.bluescorechallenge.BlueScoreChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlueScoreChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41AD2A882A95576A0003DE08 /* Build configuration list for PBXProject "BlueScoreChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AD2AB52A95576B0003DE08 /* Debug */,
+				41AD2AB62A95576B0003DE08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41AD2AB72A95576B0003DE08 /* Build configuration list for PBXNativeTarget "BlueScoreChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AD2AB82A95576B0003DE08 /* Debug */,
+				41AD2AB92A95576B0003DE08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41AD2ABA2A95576B0003DE08 /* Build configuration list for PBXNativeTarget "BlueScoreChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AD2ABB2A95576B0003DE08 /* Debug */,
+				41AD2ABC2A95576B0003DE08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41AD2ABD2A95576B0003DE08 /* Build configuration list for PBXNativeTarget "BlueScoreChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AD2ABE2A95576B0003DE08 /* Debug */,
+				41AD2ABF2A95576B0003DE08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41AD2A852A95576A0003DE08 /* Project object */;
+}
