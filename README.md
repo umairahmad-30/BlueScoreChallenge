@@ -12,12 +12,12 @@ All the data in the app is randomly generated and simulated using the user’s c
 
 The BlueScore app is built using the Swift programming language and follows the Model-View-ViewModel (MVVM) architecture pattern. The architecture’s main components are:
 
-- **View:** The user interface components, designed according to Apple's Human Interface Guidelines, provide a visually appealing and user-friendly experience. The app uses UIKit for building the user interface.
+- **View:** The user interface components, designed according to Apple's Human Interface Guidelines, provide a visually appealing and user-friendly experience. The app uses UIKit to build the user interface.
 - **ViewModel:** The ViewModel is the intermediary between the View and the data model. It retrieves and processes threat data, calculates the Cyber Threat Index, and provides formatted data to the View for display. The ViewModel also handles communication with the Location Services and manages notifications.
 - **Model:** The Model contains the data structures and logic related to the threat data. It includes threat locations with associated threat indexes and coordinates.
-- **Location Services:** The app leverages Core Location to determine the user's location and provide location-based threat data. This is done all the time in the background (subject to use opt-in).
-- **ARKit:** The app uses ARKit for the augmented reality feature, allowing users to visualize cyber threats in real time using AR overlays.
-- **User Notification Services:** User Notifications are deployed periodically/when reaching severe BlueScore Levels, to alert the user (subject to use opt-in).
+- **Location Services:** The app leverages Core Location to determine the user's location and provide location-based threat data. This is done all the time in the background (subject to user opt-in).
+- **ARKit:** The app uses ARKit for the augmented reality feature, allowing users to visualize cyber threats in real-time using AR overlays.
+- **User Notification Services:** User Notifications are deployed periodically/when reaching severe BlueScore Levels, to alert the user (subject to user opt-in).
 
 ## Screens Overview
 
